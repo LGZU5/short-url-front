@@ -21,7 +21,11 @@ function Input() {
 				/>
 				<Button type='submit'>Shorten</Button>
 			</form>
-			{showBox && <Box setCopied={setCopied} url={url} copied={copied} />}
+			<div
+				className={`transition-all duration-500 ease-in-out flex items-center justify-center ${showBox ? 'opacity-100' : 'opacity-0'} w-full`}
+			>
+				<Box setCopied={setCopied} url={url} copied={copied} />
+			</div>
 		</>
 	);
 }
