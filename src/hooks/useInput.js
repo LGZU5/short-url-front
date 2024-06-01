@@ -1,28 +1,23 @@
 import validator from 'validator';
+import sendUrl from '../services/urlServices';
+import { useState } from 'react';
 
 const useInput = () => {
+	const [copied, setCopied] = useState(false);
+	const [url, setUrl] = useState('');
+	const [showBox, setShowBox] = useState(false);
+
 	const handleSubmit = async event => {
-		console.log('handleSubmit called');
 		event.preventDefault();
 
 		const urlInput = event.target.elements.urlInput.value;
-		console.log('urlInput:', urlInput);
 		const validUrl = validator.isURL(urlInput);
-		console.log('validUrl:', validUrl);
 
 		if (validUrl) {
 			try {
-				console.log('Attempting to fetch');
-				const response = await fetch('http://localhost:3000/short-url', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({ url: urlInput }),
-				});
-				console.log('Fetch response:', response);
-				const data = await response.json();
-				console.log('Response data:', data);
+				const data = await sendUrl(urlInput);
+				setUrl(data.url.urlShort);
+				setShowBox(true);
 			} catch (error) {
 				console.error('Fetch error:', error);
 			}
@@ -31,7 +26,7 @@ const useInput = () => {
 		}
 	};
 
-	return { handleSubmit };
+	return { handleSubmit, copied, setCopied, url, showBox };
 };
 
 export default useInput;
