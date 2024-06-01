@@ -1,3 +1,5 @@
+import Button from './button';
+
 function Box({ setCopied, url, copied }) {
 	return (
 		<>
@@ -5,13 +7,18 @@ function Box({ setCopied, url, copied }) {
 				<div className='bg-primary-700 w-full items-center justify-center rounded-lg'>
 					<p>
 						Shortened URL :{' '}
-						<a href={`https://shorturl.com/${url}`}>
+						<a
+							href={`https://shorturl.com/${url}`}
+							target='_blank'
+							rel='noreferrer'
+						>
 							https://shorturl.com/{url}
 						</a>
 					</p>
 				</div>
-				<button
-					className='bg-primary-400 rounded-lg p-2'
+
+				<Button
+					type='button'
 					onClick={() => {
 						navigator.clipboard
 							.writeText(`https://shorturl.com/${url}`)
@@ -21,7 +28,7 @@ function Box({ setCopied, url, copied }) {
 					}}
 				>
 					{copied ? 'Copied!' : 'Copy'}
-				</button>
+				</Button>
 			</div>
 		</>
 	);
