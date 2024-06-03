@@ -1,8 +1,8 @@
 function Box({ setCopied, url, copied }) {
 	return (
-		<section className='flex justify-between w-2/5 border-2 rounded-lg border-primary-800 overflow-hidden'>
-			<div className='bg-primary-400 bg-opacity-70 w-full flex items-center justify-center'>
-				<p>
+		<section className='flex justify-between md:w-2/5 w-4/5 border-2 rounded-lg border-primary-800 overflow-hidden'>
+			<div className='bg-primary-400 bg-opacity-70 w-full flex items-center justify-center p-2 md:p-0'>
+				<p className='text-center'>
 					URL acortada:{' '}
 					<a
 						href={`http://localhost:3000/${url}`}
@@ -15,7 +15,7 @@ function Box({ setCopied, url, copied }) {
 			</div>
 
 			<button
-				className='py-2 px-3 bg-primary-500 hover:bg-primary-600 text-white '
+				className='py-2 px-3 bg-primary-500 hover:bg-primary-600 text-white transition-all duration-300 ease-in-out'
 				type='button'
 				onClick={() => {
 					navigator.clipboard

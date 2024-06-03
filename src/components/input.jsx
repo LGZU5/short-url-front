@@ -11,7 +11,7 @@ function Input() {
 		<>
 			<form
 				onSubmit={handleSubmit}
-				className='flex items-center justify-center w-2/5'
+				className='flex items-center justify-center md:w-2/5 w-4/5'
 			>
 				<input
 					name='urlInput'
