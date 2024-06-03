@@ -1,7 +1,7 @@
 export const loadParticlesConfig = {
 	background: {
 		color: {
-			value: '#101720',
+			value: '#151019',
 		},
 	},
 	fpsLimit: 120,
@@ -14,22 +14,13 @@ export const loadParticlesConfig = {
 				enable: false,
 			},
 		},
-		modes: {
-			push: {
-				quantity: 4,
-			},
-			repulse: {
-				distance: 200,
-				duration: 0.4,
-			},
-		},
 	},
 	particles: {
 		color: {
-			value: '#E7F6FF',
+			value: '#88C8FF',
 		},
 		links: {
-			color: '#E7F6FF',
+			color: '#88C8FF',
 			distance: 250,
 			enable: true,
 			opacity: 0.8,

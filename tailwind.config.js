@@ -3,19 +3,22 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
+			fontFamily: {
+				montserrat: ['Montserrat Alternates', 'sans-serif'],
+			},
 			colors: {
 				primary: {
-					50: '#f3f4fa',
-					100: '#e9e9f6',
-					200: '#d7d7ee',
-					300: '#bebee3',
-					400: '#aaa4d5',
-					500: '#968cc8',
-					600: '#8574b7',
-					700: '#73639f',
-					800: '#5d5281',
-					900: '#4e4669',
-					950: '#2c273a',
+					50: '#f3f2ff',
+					100: '#e8e8ff',
+					200: '#d5d4ff',
+					300: '#b6b2ff',
+					400: '#9387ff',
+					500: '#6e55fd',
+					600: '#5c32f5',
+					700: '#4e20e1',
+					800: '#411abd',
+					900: '#37189a',
+					950: '#1f0c69',
 				},
 				white: '#E7F6FF',
 				black: '#101720',
