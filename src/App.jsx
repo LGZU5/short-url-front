@@ -1,4 +1,5 @@
 // App.jsx
+import Github from './components/github';
 import Input from './components/input';
 import ParticlesBackground from './components/particles';
 
@@ -10,6 +11,7 @@ function App() {
 					Acortador De Url
 				</h1>
 				<Input />
+				<Github />
 			</main>
 		</ParticlesBackground>
 	);

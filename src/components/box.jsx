@@ -8,8 +8,9 @@ function Box({ setCopied, url, copied }) {
 						href={`http://localhost:3000/${url}`}
 						target='_blank'
 						rel='noreferrer'
+						className='font-bold'
 					>
-						<strong>http://localhost:3000/{url}</strong>
+						http://localhost:3000/{url}
 					</a>
 				</p>
 			</div>
