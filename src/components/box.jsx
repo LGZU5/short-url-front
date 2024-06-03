@@ -1,11 +1,9 @@
-import Button from './button';
-
 function Box({ setCopied, url, copied }) {
 	return (
-		<section className='flex justify-between w-2/5 border-2 rounded-lg border-primary-800'>
-			<div className='bg-primary-700 bg-opacity-70 w-full flex items-center justify-center rounded-s-lg'>
+		<section className='flex justify-between w-2/5 border-2 rounded-lg border-primary-800 overflow-hidden'>
+			<div className='bg-primary-400 bg-opacity-70 w-full flex items-center justify-center'>
 				<p>
-					Shortened URL :{' '}
+					URL acortada:{' '}
 					<a
 						href={`http://localhost:3000/${url}`}
 						target='_blank'
@@ -16,7 +14,8 @@ function Box({ setCopied, url, copied }) {
 				</p>
 			</div>
 
-			<Button
+			<button
+				className='py-2 px-3 bg-primary-500 hover:bg-primary-600 text-white '
 				type='button'
 				onClick={() => {
 					navigator.clipboard
@@ -26,8 +25,8 @@ function Box({ setCopied, url, copied }) {
 						});
 				}}
 			>
-				{copied ? 'Copied!' : 'Copy'}
-			</Button>
+				{copied ? '¡Copiado!' : 'Copiar'}
+			</button>
 		</section>
 	);
 }
