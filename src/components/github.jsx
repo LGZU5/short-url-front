@@ -16,6 +16,7 @@ function Github() {
 			className='fixed bottom-2 right-2'
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
+			title='ver repositorio en GitHub'
 		>
 			<Button
 				className={`border-2 ${hover ? 'border-transparent bg-primary-500' : 'border-primary-500 '} hover:scale-105 rounded-lg p-1 transition-all duration-200 ease-in-out`}

@@ -15,17 +15,9 @@ const ParticlesBackground = ({ children }) => {
 		});
 	}, []);
 
-	const particlesLoaded = container => {
-		console.log(container);
-	};
-
 	return init ? (
 		<>
-			<Particles
-				id='tsparticles'
-				particlesLoaded={particlesLoaded}
-				options={loadParticlesConfig}
-			/>
+			<Particles id='tsparticles' options={loadParticlesConfig} />
 			{children}
 		</>
 	) : null;
