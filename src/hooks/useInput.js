@@ -6,6 +6,7 @@ const useInput = () => {
 	const [copied, setCopied] = useState(false);
 	const [url, setUrl] = useState('');
 	const [showBox, setShowBox] = useState(false);
+	const [error, setError] = useState(false);
 
 	const handleSubmit = async event => {
 		event.preventDefault();
@@ -22,11 +23,11 @@ const useInput = () => {
 				console.error('Fetch error:', error);
 			}
 		} else {
-			console.log('Invalid URL');
+			setError(true);
 		}
 	};
 
-	return { handleSubmit, copied, setCopied, url, showBox };
+	return { handleSubmit, copied, setCopied, url, showBox, error };
 };
 
 export default useInput;

@@ -5,7 +5,7 @@ import Box from './box';
 import Send from '../assets/send';
 
 function Input() {
-	const { handleSubmit, copied, setCopied, url, showBox } = useInput();
+	const { handleSubmit, copied, setCopied, url, showBox, error } = useInput();
 
 	return (
 		<>
@@ -28,6 +28,11 @@ function Input() {
 					<Send />
 				</Button>
 			</form>
+			{error && (
+				<p className='text-red-500 text-sm'>
+					La URL no es valida, por favor intenta de nuevo.
+				</p>
+			)}
 			<div
 				className={`transition-all duration-500 ease-in-out flex items-center justify-center ${showBox ? 'opacity-100' : 'opacity-0'} w-full`}
 			>
