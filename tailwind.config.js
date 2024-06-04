@@ -21,7 +21,7 @@ export default {
 					950: '#1f0c69',
 				},
 				white: '#E7F6FF',
-				black: '#101720',
+				black: '#151019',
 			},
 		},
 	},
