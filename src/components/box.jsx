@@ -5,12 +5,12 @@ function Box({ setCopied, url, copied }) {
 				<p className='text-center'>
 					URL acortada:{' '}
 					<a
-						href={`http://localhost:3000/${url}`}
+						href={`https://short-url-back.vercel.app/${url}`}
 						target='_blank'
 						rel='noreferrer'
 						className='font-bold'
 					>
-						http://localhost:3000/{url}
+						https://short-url-back.vercel.app/{url}
 					</a>
 				</p>
 			</div>
@@ -20,7 +20,7 @@ function Box({ setCopied, url, copied }) {
 				type='button'
 				onClick={() => {
 					navigator.clipboard
-						.writeText(`http://localhost:3000/${url}`)
+						.writeText(`https://short-url-back.vercel.app/${url}`)
 						.then(() => {
 							setCopied(true);
 						});
