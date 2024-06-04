@@ -16,7 +16,7 @@ function Box({ setCopied, url, copied }) {
 			</div>
 
 			<button
-				className='py-2 px-3 bg-primary-500 hover:bg-primary-600 text-white transition-all duration-300 ease-in-out'
+				className='py-2 px-3 bg-primary-700 hover:bg-primary-800 text-white transition-all duration-300 ease-in-out'
 				type='button'
 				onClick={() => {
 					navigator.clipboard
