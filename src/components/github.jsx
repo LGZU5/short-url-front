@@ -19,6 +19,7 @@ function Github() {
 			title='ver repositorio en GitHub'
 		>
 			<Button
+				aria-label='ver repositorio en GitHub'
 				className={`border-2 ${hover ? 'border-transparent bg-primary-500' : 'border-primary-500 '} hover:scale-105 rounded-lg p-1 transition-all duration-200 ease-in-out`}
 			>
 				<GithubSvg fill={hover ? '#101720' : '#6e55fd'} />

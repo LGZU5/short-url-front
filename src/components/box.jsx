@@ -16,6 +16,7 @@ function Box({ setCopied, url, copied }) {
 			</div>
 
 			<button
+				aria-label='copiar URL acortada'
 				className='py-2 px-3 bg-primary-700 hover:bg-primary-800 text-white transition-all duration-300 ease-in-out'
 				type='button'
 				onClick={() => {

@@ -1,6 +1,10 @@
 function Button({ type, children, ...props }) {
 	return (
-		<button type={type} className={props.className}>
+		<button
+			aria-label={props['aria-label']}
+			type={type}
+			className={props.className}
+		>
 			{children}
 		</button>
 	);

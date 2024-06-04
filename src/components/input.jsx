@@ -21,6 +21,7 @@ function Input() {
 					className='bg-primary-200  w-full p-3 border-primary-400 border-3 text-black focus:outline-none '
 				/>
 				<Button
+					aria-label='enviar URL'
 					className='transition-all duration-200 ease-in-out bg-primary-500 p-3 hover:bg-primary-600 active:bg-primary-700'
 					type='submit'
 				>
