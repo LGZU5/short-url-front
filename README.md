@@ -1,5 +1,6 @@
 
-# SHORTENER URL
+# :link: SHORTENER URL
+> A simple url shortener
 
 A modern URL shortener with an intuitive user interface that allows users to efficiently generate, manage, and share short links. Built with React and styled with Tailwind CSS, this frontend project ensures a smooth and attractive user experience.
 
@@ -42,8 +43,8 @@ Open https://short-url-front-xi.vercel.app/ to view in the browser Demo
 
 ## Tech Stack
 
-Vite
-React 18.2.0, 
-Tailwind CSS 3.4.3
+🚀 Vite
+💣 React 18.2.0, 
+🎨 Tailwind CSS 3.4.3
 
 
