@@ -43,8 +43,8 @@ Open https://short-url-front-xi.vercel.app/ to view in the browser Demo
 
 ## Tech Stack
 
-🚀 Vite
-💣 React 18.2.0, 
-🎨 Tailwind CSS 3.4.3
+-🚀 Vite
+-💣 React 18.2.0, 
+-🎨 Tailwind CSS 3.4.3
 
 
