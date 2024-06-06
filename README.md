@@ -1,8 +1,47 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SHORTENER URL
 
-Currently, two official plugins are available:
+A modern URL shortener with an intuitive user interface that allows users to efficiently generate, manage, and share short links. Built with React and styled with Tailwind CSS, this frontend project ensures a smooth and attractive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/LGZU5/short-url-front.git
+```
+
+Go to the project directory
+
+```bash
+  cd short-url-front
+```
+
+Install dependencies
+
+```bash
+  npm install
+  or
+  yarn install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Demo
+
+Open https://short-url-front-xi.vercel.app/ to view in the browser Demo
+
+
+## Tech Stack
+
+Vite
+React 18.2.0, 
+Tailwind CSS 3.4.3
+
+
