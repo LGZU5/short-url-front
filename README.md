@@ -35,6 +35,8 @@ Start the server
 
 ## Demo
 
+![Project Screenshot](https://github.com/LGZU5/short-url-front/blob/master/public/exampleImage.jpg)
+
 Open https://short-url-front-xi.vercel.app/ to view in the browser Demo
 
 
